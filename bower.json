@@ -1,0 +1,18 @@
+{
+  "name": "guclink-satellizer-decorator",
+  "homepage": "https://github.com/ah450/guclink-satellizer-decorator",
+  "authors": [
+    "Ahmed H. Ismail <ahm3d.hisham@gmail.com>"
+  ],
+  "description": "Cookie storage decorator for satellizer",
+  "main": "sat-cookie-decorator.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
