@@ -2,7 +2,7 @@ angular.module('satellizer')
 .requires.push('ngCookies');
 
 angular.module('satellizer')
-.decorator('SatellizerStorage', function($delegate, $cookies) {
+.decorator('SatellizerStorage', ['$delegate', '$cookies', function($delegate, $cookies) {
   var storage = {
     get: function(key) {
       return $cookies.get(key);
@@ -16,4 +16,4 @@ angular.module('satellizer')
   };
 
   return storage;
-});
+}]);
