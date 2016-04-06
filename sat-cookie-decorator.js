@@ -1,5 +1,5 @@
 angular.module('satellizer')
-.requires.push('ngCookie');
+.requires.push('ngCookies');
 
 angular.module('satellizer')
 .decorator('SatellizerStorage', function($delegate, $cookies) {
