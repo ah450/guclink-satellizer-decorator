@@ -8,7 +8,7 @@ angular.module('satellizer')
       return $cookies.get(key);
     },
     set: function(key, value) {
-      $cookies.put(key, value, { path: '/', domain: '.guclink.in', secure: true });
+      $cookies.put(key, value);
     },
     remove: function(key) {
       $cookies.remove(key);
