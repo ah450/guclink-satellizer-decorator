@@ -3,10 +3,11 @@ angular.module('satellizer')
 
 angular.module('satellizer')
   .config (['$cookiesProvider', function($cookiesProvider) {
-    $cookiesProvider.defaults =
+    $cookiesProvider.defaults = {
       path: '/'
       domain: '.guclink.in'
       secure: true
+    }
   }]);
 
 angular.module('satellizer')
@@ -16,7 +17,7 @@ angular.module('satellizer')
       return $cookies.get(key);
     },
     set: function(key, value) {
-      $cookies.put(key, value);
+      $cookies.put(ke y, value);
     },
     remove: function(key) {
       $cookies.remove(key);
