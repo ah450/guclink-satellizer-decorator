@@ -2,13 +2,13 @@ angular.module('satellizer')
 .requires.push('ngCookies');
 
 angular.module('satellizer')
-  .config (['$cookiesProvider', function($cookiesProvider) {
-    $cookiesProvider.defaults = {
-      path: '/',
-      domain: '.guclink.in',
-      secure: true
-    }
-  }]);
+.config(['$cookiesProvider', function($cookiesProvider) {
+  $cookiesProvider.defaults = {
+    path: '/',
+    domain: '.guclink.in',
+    secure: true
+  }
+}]);
 
 angular.module('satellizer')
 .decorator('SatellizerStorage', ['$cookies', function($cookies) {
